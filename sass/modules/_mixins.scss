@@ -1,0 +1,14 @@
+@use '../custom';
+
+@mixin bgi-center {
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+@mixin orange-line {
+   background-color: custom.$secondary;
+   width: 50%;
+   height: 100%;
+   z-index: -1;
+}

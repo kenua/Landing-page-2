@@ -1,0 +1,52 @@
+@use '../modules/mixins';
+@use '../custom';
+
+.art {
+   &__orange-line {
+      background-color: custom.$secondary;
+      width: 70%;
+      height: 100%;
+      z-index: -1;
+   }
+
+   &__grid {
+      display: grid;
+      row-gap: 2rem;
+      grid-template-columns: minmax(auto, 300px);
+      justify-content: center;
+
+      .grid__item--img {
+         @include mixins.bgi-center;
+         height: 300px;
+
+         &:nth-child(1) {
+            background-image: url('../images/bedroom-s.jpg');
+         }
+         &:nth-child(2) {
+            background-image: url('../images/woman-s.jpg');
+         }
+      }
+
+      .grid__item--txt {
+         height: 150px;
+         display: flex; 
+         flex-direction: column;
+         justify-content: flex-end;
+      }
+   }
+
+   @include custom.media-breakpoint-up(md) {
+      &__orange-line {
+         width: 50%;
+      }
+
+      &__grid {
+         column-gap: 2rem;
+         grid-template-columns: repeat(3, minmax(auto, 300px));
+         
+         .grid__item--txt {
+            height: 300px;
+         }
+      }
+   }
+}

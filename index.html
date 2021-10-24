@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Kenua">
+   <title>Minimalist Interior</title>
+   <!--GOOGLE FONTS-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;700&display=swap" rel="stylesheet">
+   <!--BOOTSTRAP ICONS-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+   <!--CUSTOM-->
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-primary text-light">
+   <!--MENU-->
+   <div id="menu" class="menu d-flex flex-column justify-content-center">
+      <div class="menu__orange-box"></div>
+      <div class="menu__button-container">
+         <button type="button" title="Close" id="close-menu" class="menu__button">
+            <span class="button__line"></span>
+            <span class="button__line"></span>
+         </button>
+      </div>
+      <ul class="menu__list list-unstyled">
+         <li class="menu__list-item"> <a href="#" class="d-block text-center text-uppercase fs-3 fw-bold karla mb-4">Home</a></li>
+         <li class="menu__list-item"> <a href="#" class="d-block text-center text-uppercase fs-3 fw-bold karla mb-4">Studio</a></li>
+         <li class="menu__list-item"> <a href="#" class="d-block text-center text-uppercase fs-3 fw-bold karla mb-4">Art</a></li>
+         <li class="menu__list-item"> <a href="#" class="d-block text-center text-uppercase fs-3 fw-bold karla">Overviews</a></li>
+      </ul>
+   </div>
+
+   <!-- INTRO -->
+   <section class="intro wrapper container-fluid text-light position-relative">
+      <div class="intro__menu-button position-absolute top-0 start-50 translate-middle-x">
+         <button type="button" title="Menu" class="intro__button" id="open-menu">
+            <span class="button__line"></span>
+            <span class="button__line"></span>
+            <span class="button__line"></span>
+         </button>
+      </div>
+      <div class="row">
+         <!--FIRST-->
+         <div class="intro__hero intro__item col-md-6"></div>
+         <!--SECONDS-->
+         <div class="intro__content intro__item col-md-6 d-md-flex flex-column justify-content-end px-md-4 py-5">
+            <h1 class="display-3 karla text-uppercase text-end">
+               MINIMALIST<br>
+               INTERIOR<br>
+               <span class="display-1 fw-bold">DESIGN</span>
+            </h1>
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, ea consectetur ullam explicabo iure blanditiis aliquid dicta ad modi quasi architecto iusto numquam repudiandae a amet facere nostrum eum voluptate.</p>
+         </div>
+      </div>
+   </section>
+   <!--STUDIO-->
+   <section class="studio container-fluid py-5 text-light">
+      <div class="studio__grid">
+         <div class="grid__item studio__title">
+            <h2 class="display-4 karla text-uppercase">Modern <br><span class="fw-bold">Interior Studio</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deleniti, expedita molestias dolorum nobis quae voluptatem amet impedit ducimus fuga.</p>
+         </div>
+
+         <div class="grid__item studio__subgrid">
+            <div class="grid__item">
+               <i class="bi bi-lightbulb fs-1 d-block mb-2"></i>
+               <h3 class="grid__heading fw-light fs-3 m-0">idea</h3>
+            </div>
+   
+            <div class="grid__item">
+               <i class="bi bi-clipboard fs-1 d-block mb-2"></i>
+               <h3 class="grid__heading fw-light fs-3">Project</h3>
+            </div>
+   
+            <div class="grid__item">
+               <i class="bi bi-star fs-1 d-block mb-2"></i>
+               <h3 class="grid__heading fw-light fs-3">Design</h3>
+            </div>
+   
+            <div class="grid__item">
+               <i class="bi bi-palette fs-1 d-block mb-2"></i>
+               <h3 class="grid__heading fw-light fs-3">Color</h3>
+            </div>
+   
+            <div class="grid__item">
+               <i class="bi bi-tools fs-1 d-block mb-2"></i>
+               <h3 class="grid__heading fw-light fs-3">Support</h3>
+            </div>
+   
+            <div class="grid__item">
+               <i class="bi bi-clipboard fs-1 d-block mb-2"></i>
+               <h3 class="grid__heading fw-light fs-3">Project</h3>
+            </div>
+         </div>
+
+         <div class="grid__item studio__img"></div>
+      </div>
+   </section>
+   <!--ART-->
+   <section class="art container-fluid px-md-5 py-5 text-light position-relative">
+      <div class="art__orange-line position-absolute top-0 start-50 translate-middle-x"></div>
+      <div class="d-md-flex justify-content-center">
+         <h2 class="karla display-5 text-uppercase text-end fw-bold">
+            <span class="fs-6 fw-light">Decoration Secrets</span><br>
+            Interior Art
+         </h2>
+      </div>
+
+      <div class="art__grid mt-5">
+         <div class="grid__item grid__item--img"></div>
+         <div class="grid__item grid__item--img"></div>
+         <div class="grid__item grid__item--txt">
+            <h3 class="fs-4 karla text-uppercase text-end fw-bold m-0">
+               ARTWORKS<br>
+               ARTISTS<br>
+               MAGAZINE<br>
+               TERMS OF USE
+            </h3>
+         </div>
+      </div>
+   </section>
+   <!--OVERVIEWS-->
+   <section class="overviews wrapper container-fluid px-md-5 py-5">
+      <div class="row gy-4">
+         <div class="col-lg-4">
+            <h2 class="display-4 karla text-uppercase fw-bold m-0">FOR HIGH LEVEL OVERVIEWS</h2>
+            <p>BUSINESS STRATEGY</p>
+         </div>
+
+         <div class="col-lg-4">
+            <p>Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil voluptatum consectetur placeat
+            eius cum? Illo, ad adipisci cumque deserunt tenetur molestiae quaerat explicabo nobis accusamus iure doloremque, ab
+            ipsa temporibus? amet consectetur, adipisicing elit. Sapiente Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Dolor minus sunt illo unde quia id itaque placeat esse deleniti, cupiditate ipsum quas laborum provident, 
+            adipisci maxime nesciunt, voluptas amet labore. delectus quaerat esse a eligendi voluptatum dolores autem nostrum 
+            fuga soluta, odio illo ipsa. Ipsam, itaque voluptatem expedita dolor optio quaerat?</p>
+         </div>
+
+         <div class="col-lg-4 align-self-end">
+            <ul class="m-0">
+               <li class="karla fs-5 text-uppercase fw-bold"><p class="m-0">STRATEGY</p></li>
+               <li class="karla fs-5 text-uppercase fw-bold my-3"><p class="m-0">CONCEPT</p></li>
+               <li class="karla fs-5 text-uppercase fw-bold"><p class="m-0">MARKETING</p></li>
+               <li class="karla fs-5 text-uppercase fw-bold my-3"><p class="m-0">MANAGEMENT</p></li>
+               <li class="karla fs-5 text-uppercase fw-bold"><p class="m-0">DESIGN</p></li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   <!--TRENDS-->
+   <section class="trends wrapper container-fluid px-md-5 py-5 position-relative">
+      <div class="orange-line position-absolute top-0 start-50 translate-middle-x"></div>
+      <div class="row">
+         <div class="col-lg-6">
+            <picture class="d-block py-5">
+               <source type="image/jpg" srcset="images/bedroom-s.jpg" media="(max-width: 799px)">
+               <source type="image/jpg" srcset="images/bedroom.jpg" media="(min-width: 800px)">
+               <img src="images/bedroom-s.jpg" alt="Bedroom" class="img-fluid">
+             </picture>        
+         </div>
+         <div class="col-lg-6 text-end align-self-center">
+            <p class="karla text-uppercase">FROM MILAN DESIGN WEEK</p>
+            <h2 class="display-4 karla text-uppercase fw-bold">INTERIOR COLOR TRENDS</h2>
+            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptates quam sapiente suscipit provident consectetur nostrum odit velit architecto magnam, fugit ad molestiae perspiciatis. Quaerat quia maxime dicta quasi corrupti.</p>
+         </div>
+      </div>
+   </section>
+   <!--STYLE-->
+   <section class="style wrapper container-fluid px-md-5 py-5">
+      <div class="style__grid">
+         <div class="grid__item">
+            <picture class="d-block text-center">
+               <source type="image/jpg" srcset="images/plant-s.jpg" media="(max-width: 799px)">
+               <source type="image/jpg" srcset="images/plant.jpg" media="(min-width: 800px)">
+               <img src="images/plant-s.jpg" alt="plant" class="img-fluid">
+            </picture>   
+            <h2 class="display-4 karla text-uppercase fw-bold my-4">THAI STYLE HOME WABI SABI</h2>
+            <p>Lorem ipsum dolor sit amet consectetur laudantium alias possimus. Praesentium totam ipsum quisquam reiciendis voluptatibus ab consequatur architecto modi. Vero facere illum consequatur aliquam earum omnis?</p>
+         </div>
+         <div class="grid__item subgrid">
+            <img src="images/cups.jpg" alt="cups" class="subgrid__item img-fluid">
+            <img src="images/orange.jpg" alt="orange" class="subgrid__item img-fluid">
+            <img src="images/flower-orange.jpg" alt="flower" class="subgrid__item img-fluid">
+         </div>
+      </div>
+   </section>
+   <!--TOUCH-->
+   <section class="touch wrapper container-fluid px-md-5 py-5 text-light position-relative text-center">
+      <div class="orange-line position-absolute top-0 start-50 translate-middle-x"></div>
+      
+      <h2 class="karla display-5 text-uppercase fw-bold">Decoration Secrets</h2>
+      <p>Lorem ipsum dolor sit am elit. Vero architecto obcaecati incidunt, temporibus, doloremque quisquam minus debitis laborum perspiciatis corrupti nisi. Laboriosam cum ipsum explicabo fugiat obcaecati neque.</p>
+
+      <div class="row mt-5 g-4">
+         <!--FIRST-->
+         <div class="col-lg-4">
+            <div class="d-flex flex-column justify-content-center bg-primary p-5">
+               <div class="touch__icon">
+                  <i class="bi bi-geo-alt fs-2 lh-1 d-inline-block p-3 rounded-circle border border-2 text-muted"></i>
+               </div>
+               <p class="my-3 text-muted fw-bold">Address:</p>
+               <p>
+                  121 Rock Sreet, 21 Avenue,
+                  New York, NY 92103-9000
+               </p>
+            </div>
+         </div>
+         <!--SECOND-->
+         <div class="col-lg-4">
+            <div class="d-flex flex-column justify-content-center bg-primary p-5">
+               <div class="touch__icon">
+                  <i class="bi bi-envelope fs-2 lh-1 d-inline-block p-3 rounded-circle border border-2 text-muted"></i>
+               </div>
+               <p class="my-3 text-muted fw-bold">Email:</p>
+               <p>
+                  <a href="#" class="link">minimalist@email.com</a>
+                  <a href="#" class="link">minimalist@email.com</a>
+               </p>
+            </div>
+         </div>
+          <!--THIRD-->
+          <div class="col-lg-4">
+            <div class="d-flex flex-column justify-content-center bg-primary p-5">
+               <div class="touch__icon">
+                  <i class="bi bi-telephone fs-2 lh-1 d-inline-block p-3 rounded-circle border border-2 text-muted"></i>
+               </div>
+               <p class="my-3 text-muted fw-bold">Call Us:</p>
+               <p>
+                  1 234 567 890
+                  1 234 567 890
+               </p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--FOOTER-->
+   <section class="footer text-center py-5">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quisquam.<br> Kenua &copy;2021</p>
+   </section>
+   <script src="scripts/dom.js"></script>
+</body>
+</html>

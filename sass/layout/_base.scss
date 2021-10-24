@@ -1,0 +1,8 @@
+@use '../custom';
+
+@include custom.media-breakpoint-up(xxl) {
+   .wrapper {
+      max-width: 80%;
+      margin: 0 auto;
+   }
+}

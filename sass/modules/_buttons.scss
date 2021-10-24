@@ -1,0 +1,69 @@
+.intro__button {
+   box-sizing: content-box;
+   background-color: #00000000;
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+   border: none;
+   margin-top: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   transition: background-color 250ms ease-in-out;
+
+   &:hover {
+      background-color: #00000025;
+
+      .button__line:nth-child(2) {
+         width: 75%;
+      }
+   
+      .button__line:nth-child(3) {
+         width: 50%;
+      }
+   }
+
+   .button__line {
+      background-color: white;
+      width: 100%;
+      height: 3px;
+      display: block;
+      transition: width 250ms ease-in-out;
+   }
+}
+
+.menu__button {
+   background-color: #00000000;
+   width: 40px;
+   height: 40px;
+   border: none;
+   display: block;
+   position: relative;
+
+   .button__line {
+      background-color: white;
+      width: 100%;
+      height: 3px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      transition: transform 300ms ease;
+   }
+
+   .button__line:nth-child(1) {
+      transform: rotate(45deg);
+   }
+
+   .button__line:nth-child(2) {
+      transform: rotate(-45deg);
+   }
+
+   &:hover {
+      .button__line {
+         transform: rotate(0deg);
+      }
+   }
+}

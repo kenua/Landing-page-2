@@ -1,0 +1,8 @@
+@use '../custom';
+@use '../modules/mixins';
+
+.trends {
+   .orange-line {
+      @include mixins.orange-line;
+   }
+}

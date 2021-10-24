@@ -1,0 +1,16 @@
+@use '../custom';
+
+.karla {
+   font-family: 'Karla', sans-serif;
+   line-height: 1;
+}
+
+.link {
+   text-decoration: none;
+   color: white;
+
+   &:hover {
+      text-decoration: underline;
+      color: custom.$secondary;
+   }
+}

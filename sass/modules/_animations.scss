@@ -1,0 +1,17 @@
+@keyframes show-menu {
+   0% {
+      top: -100%;
+   }
+   100% {
+      top: 0;
+   }
+}  
+
+@keyframes hide-menu {
+   0% {
+      top: 0;
+   }
+   100% {
+      top: -100%;
+   }
+} 
